@@ -1,0 +1,33 @@
+<keycloak-saml-adapter>
+    <SP entityID="http://eap73.example.com:8080/app-profile-saml/"
+        sslPolicy="NONE"
+	    logoutPage="/index.jsp">
+        <Keys>
+            <Key signing="true">
+                <PrivateKeyPem>
+                    MIIEpQIBAAKCAQEApi3ZPrH8BIfgZTav5FWUSdEcoiw3hB83b67u8RrKcvO172Cd8qcxIdSIc6ev7OGce4J4OOOx3Swuuy8miG9H9v1hZa+fOcVA7rDNdbI8TsIX1JzDc4Y8mwuKfP+YvSS1m7fPlKKRtuf9NYDEZEWsD6tYbhGrJ6xYLarZpPiLKuS8B2+qCWxbM9yhA9Kr0lLCc7qiXw8Kx7HaBTRqqH5Q8P/7dQ/wEYwumuXf24569u2o9L9h6PBKrOm5k4B+P/MI+nu6FMXcR9eiMOMkXV8IDRW2s49k9BmALY4TGf1WAts3LVWpsUpYZD+FVQSTtkN0jv5NbVLmATtqmLzJZPxYvwIDAQABAoIBACxKTftqvouKl2ECeVC3CmW+KQ6EEGvTUhgfHKoABPMsR1I8gvxYWTz2A0Qn7jiJTQaSGG65KP+UtgPHplJ4rkqC78GFVD+2df7n+mqjDXXEP0u4WFNi9KYyJj/4c4H91bViAR5RUdrY6+ClqDI9a4VlmpUDeoWBZqMNRSK154mPrPTqNyydzPnRVp52M0q/X0RQbXT2FEhpEXWxxtr244VXCmF4JmnTiIcDQi9HyEzC+qe7UCX57OIlU92KvZE7P0iIJK/imvrg4mSMi3ogDzV+9ohmAcBj65jomZWuqlvcGVwfs2sBHnmw0ul3hRKh1o3yTRoO9x0lsnNZYpLgIzkCgYEA2wSD0G0PlErQ/nTLOZIBtZZ43QUwqLaitYxSbxjr0IFwVOC7b9VQ/GR+0dmAI8//3v11Aw9sGPzrLSknRpnFB5ziJ0atiCtoNj5zbrH6oRDIB/0e/w+PUsF/srUT4mwLKtH+wMJsZb1aYEPw1ZmL+7qpBKH6LuXYLLgJrjwXchUCgYEAwj1HoDv0SMFaEZFY8DydDqCsMWfUBH6Fb0Qs8OyZVstM/5Q/v9u0yyRdKKynnwhlWSHPAs3v2JOhqEOeMBoCrI2qf4gfO83SQliqEf5paOl7e5JkOy3AmJr/Qj4Cu53eygjAOLJMtmNtnVTP0V5CtAdtQt4xhaQAPrKjOErfGIMCgYEAnFcmuNuBKXwWn+1DPH9LFRKqiCsyRtzIXQwjtAZ4HsinJQ+e/P+q5d/e33GBFQ9fORB4PIz/vv6b6grcbHtLuFl23k6HhRJnO4Fs6PHHVL4j6//15mB3EL3rp+e2oAQ8HH72eSbQNffq0ZjuC6ulzzW5fQMbEeskWxesYWGn4tkCgYEAoA4E3mlo4ybIRB+jzNn1hR8qpM9sqoNjCouACMq9lAKUISoU2dB+CsKdLS4QNYCimq68ORBfKfSEyfVl/TcBqxRVQR92tT3lmxwakBc23uc+BFZd11HdGSLnYbtdXyI4efx6AH4TrlsB8Rn44QouJtDT3Lzgy8GXHhLvYix352cCgYEAlS9Bm5ed+aAyfVChnY4vFL9aYx/PTsOF+WT01YyPr8xz+5xKKq7BZlwMUBMpbJFWZFuKNrMfA86AlLzeOPToQY42laTQLkIkGxj6PfajQnqUyrEHr8YNse7vjmltd5Pqma2jyisVM25DzsqPUdApjIBmVsdmbiZfmIm9WQHaYVE=
+                </PrivateKeyPem>
+                <CertificatePem>
+                    MIICrzCCAZcCBgF8MeNsmDANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDDBBhcHAtcHJvZmlsZS1zYW1sMB4XDTIxMDkyOTE0MDc0MFoXDTMxMDkyOTE0MDkyMFowGzEZMBcGA1UEAwwQYXBwLXByb2ZpbGUtc2FtbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKYt2T6x/ASH4GU2r+RVlEnRHKIsN4QfN2+u7vEaynLzte9gnfKnMSHUiHOnr+zhnHuCeDjjsd0sLrsvJohvR/b9YWWvnznFQO6wzXWyPE7CF9Scw3OGPJsLinz/mL0ktZu3z5Sikbbn/TWAxGRFrA+rWG4RqyesWC2q2aT4iyrkvAdvqglsWzPcoQPSq9JSwnO6ol8PCsex2gU0aqh+UPD/+3UP8BGMLprl39uOevbtqPS/YejwSqzpuZOAfj/zCPp7uhTF3EfXojDjJF1fCA0VtrOPZPQZgC2OExn9VgLbNy1VqbFKWGQ/hVUEk7ZDdI7+TW1S5gE7api8yWT8WL8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAWVcrjf8BTW+fSfZNnB7ZesG8WQZRnuJO7tLjGRYuvBBm0rvuqTQk8L/PiSyZ7VPFkwtgvDnIFKgu8rEoJgoKXSAdz9/65CQzozA+5ibvyxRjbkbP1g/66b5xYWWa70BV5m+DlUCXKw+3ZUyPS9pxiElgt2NHX8C3MQR0TCgOWCNO5Ng+s6+9HWGq56PaAJINrlMF0WQKgGJKSFakym1HX7CYB6NBxj5DiA7KWZrj2iaHuoRrnsFeqHm0tcrrLTXAK3G2X6Fib3k8wAjUrfuPvY+swAXnPvhARw8T6O3qUA6DoWRkizGr8JTv907oXag95tz3Wth7qmaoQNsnZkVDxQ==
+                </CertificatePem>
+            </Key>
+        </Keys>
+        <IDP entityID="idp"
+             signatureAlgorithm="RSA_SHA256"
+             signatureCanonicalizationMethod="http://www.w3.org/2001/10/xml-exc-c14n#">
+            <SingleSignOnService signRequest="true"
+                                 validateResponseSignature="true"
+                                 validateAssertionSignature="false"
+                                 requestBinding="POST"
+                                 bindingUrl="http://rhsso.example.com:8080/auth/realms/master/protocol/saml"/>
+            <SingleLogoutService signRequest="true"
+                                 signResponse="true"
+                                 validateRequestSignature="true"
+                                 validateResponseSignature="true"
+                                 requestBinding="POST"
+                                 responseBinding="POST"
+                                 postBindingUrl="http://rhsso.example.com:8080/auth/realms/master/protocol/saml"
+                                 redirectBindingUrl="http://rhsso.example.com:8080/auth/realms/master/protocol/saml"/>
+        </IDP>
+    </SP>
+</keycloak-saml-adapter>
